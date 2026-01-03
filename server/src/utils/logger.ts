@@ -13,8 +13,7 @@ export const logger = winston.createLogger({
         logFormat
     ),
     transports: [
-        new winston.transports.File({ filename: path.join(__dirname, '../../logs/error.md'), level: 'error' }),
-        new winston.transports.File({ filename: path.join(__dirname, '../../logs/combined.md') }),
+        new winston.transports.File({ filename: path.join(__dirname, '../../logs/project_log.md') }),
     ],
 });
 
